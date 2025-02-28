@@ -111,6 +111,6 @@ This project is licensed under the MIT License.
 
 ## Author
 
-Your Name - [Favour Okpara](https://github.com/Okpara202)
+[Favour Okpara](https://github.com/Okpara202)
 
 # **THANK YOU**
