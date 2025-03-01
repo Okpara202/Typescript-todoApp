@@ -102,7 +102,15 @@ class TodoList implements ITodoList {
       console.log(`📭 Your Todo list is empty. Enjoy your day.`);
       return [];
     }
-    console.log("📋 Current Todo List:", this.todoItems);
+    console.log("📋 Current Todo List:");
+    this.todoItems.forEach((item) =>
+      console.log({
+        id: item.id,
+        task: item.task,
+        completed: item.completed,
+        duDate: item.dueDate.toDateString(),
+      })
+    );
     return this.todoItems;
   }
 
@@ -167,17 +175,19 @@ class TodoList implements ITodoList {
   }
 }
 
-// Examples usage showing every method and the error handling inplace
+// Examples usage showing every method and some of the error handling inplace.
 
 // Create instances of the task
 const taskList = new TodoList();
 const emptyList = new TodoList();
 
 // Add new todo items
-taskList.addTodo("Buy groceries", new Date("2025-03-01"));
+taskList.addTodo("Buy Cake", new Date("2025-07-01"));
+taskList.addTodo("Buy Drink", new Date("2025-10-05"));
+taskList.addTodo("Buy Meat", new Date("2025-12-11"));
 taskList.addTodo("Complete project", new Date("2024-12-31"));
 taskList.addTodo("", new Date("2025-03-01"));
-taskList.addTodo("Buy groceries", new Date("2025-03-01"));
+taskList.addTodo("Buy groceries", new Date("2025-07-01"));
 
 // Mark a todo item as completed
 taskList.completeTodo(1);
@@ -198,7 +208,7 @@ taskList.filterCompleted();
 emptyList.filterCompleted();
 
 // Update the description of a todo item
-taskList.updateTodoDescription(2, "Finish project");
+taskList.updateTodoDescription(2, "Throw party");
 taskList.updateTodoDescription(99, "New task");
 taskList.updateTodoDescription(2, "");
 taskList.updateTodoDescription(2, "Buy groceries");

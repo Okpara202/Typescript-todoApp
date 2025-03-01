@@ -39,7 +39,7 @@ The application includes various error checks including but not limited to:
 
 ## Installation
 
-Ensure you have [Node.js](https://nodejs.org/).
+Ensure you have [Node.js](https://nodejs.org/). The source code for this application is located in main.ts under src folder.
 
 1. Clone this repository:
    ```sh
