@@ -111,6 +111,6 @@ This project is licensed under the MIT License.
 
 ## Author
 
-[Favour Okpara](https://github.com/Okpara202)
+Designed and created by [Favour Okpara](https://github.com/Okpara202)
 
 # **THANK YOU**
