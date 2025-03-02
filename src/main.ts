@@ -1,9 +1,12 @@
 // Interface representing a todo item
-interface ITodoItem {
+interface Idate {
+  dueDate: Date;
+}
+
+interface ITodoItem extends Idate {
   id: number;
   task: string;
   completed: boolean;
-  dueDate: Date;
 }
 
 // Interface representing the todo list core functionality
